@@ -3,16 +3,14 @@
 <head>
   <meta charset="utf-8">
   
-  <title>最近浏览 | 炎宁海名</title>
+  <title>最近浏览 | Himwen_</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="一个美丽的仙女">
+  <meta name="description" content="第一篇">
 <meta property="og:type" content="分类">
 <meta property="og:title" content="Hello World">
 <meta property="og:url" content="haiming-wen.github.io/2019/03/03/hello-world/index.html">
-<meta property="og:site_name" content="炎宁海名">
-<meta property="og:description" content="本版本仅适用于Win环境本文关键字： Hexo绿色版，Hexo便携版，Hexo配置，Hexo，U盘
-
-没有你，我的世界没有色彩；没有你，我的天空没有白云；没有你，我的躯体没有灵魂">
+<meta property="og:site_name" content="Himwen_">
+<meta property="og:description" content="本q">
 <meta property="og:image" content="https://portablehexo.bitmoe.cn/hexopp/hexop.png">
 <meta property="og:image" content="https://portablehexo.bitmoe.cn/hexopp/hexop2.png">
 <meta property="og:image" content="https://portablehexo.bitmoe.cn/hexopp/hexop3.png">
@@ -43,7 +41,7 @@
   <div id="header-outer" class="outer">
     <div id="header-title" class="inner">
       <h1 id="logo-wrap">
-        <a href="/" id="logo">炎宁与海名</a>
+        <a href="/" id="logo">Himwen_</a>
       </h1>
       
         <h2 id="subtitle-wrap">
@@ -91,13 +89,33 @@
       
        <p><img src="images/a3.png" alt=""></p>
 <blockquote>
-<p><strong>炎宁</p>
+<p><strong></p>
 </blockquote>
 
 <p>这是第一篇博客</p>
-      <p>给你讲一则笑话</p>
-      <>一对夫妇吵架了，丈夫吃完晚饭就到卧室休息了。妻子走到床前，在旁边的小桌子上发现了一张纸，上面写着：“孩他妈，——早上七点叫我起床。——孩他爸。”
-第二天早上，丈夫醒来，却发现快八点了——抬头看到桌子上多出了一张纸，拿了过来，上面写着：“孩他爸，——起床，七点了。——孩他妈”。</p>
+      <p></p>
+      <>时间复杂度：O(n^2)   O(n)    O(n^2) （最坏 最好 平均）
+空间复杂度：O(1) 
+
+思想：每次将一个待排序的数据按照其关键字的大小插入到前面已经排序好的数据中的适当位置（前面有序，后面无序），直到全部数据排序完成。
+稳定性： 稳定 每次都是在前面已排好序的序列中找到适当的位置，只有小的数字会往前插入（比较），所以原来相同的两个数字在排序后相对位置不变。
+
+代码：
+
+/**
+ * 插入排序
+ */
+public static void insertSort(int[] array) {//插入排序
+    for (int i = 1; i < array.length; i++ ) {
+        int temp = array[i];
+        int j = i;
+        while (j >= 0 && array[j-1] > temp) {  
+            array[j] = array[j-1];
+            j--;
+        }
+        array[j] = temp; 
+    }
+}</p>
     </div>
     <footer class="article-footer">
       <a data-url="haiming-wen.github.io/2019/03/03/hello-world/" data-id="cjssmgyc10000wovhomt3r9kv" class="article-share-link">Delen</a>
@@ -165,11 +183,11 @@
     <ul>
       
         <li>
-          <a href="/2019/03/03/a/">道歉</a>
+          <a href="/2019/03/03/a/">Java</a>
         </li>
       
         <li>
-          <a href="/2019/03/03/hello-world/">道歉</a>
+          <a href="/2019/03/03/hello-world/">数据结构</a>
         </li>
       
     </ul>
